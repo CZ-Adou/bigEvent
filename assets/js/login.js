@@ -55,6 +55,7 @@ $('#form_reg').on('submit', function (e) {
 
 
 $("#form_login").on('submit', function (e) {
+  console.log(this)
   e.preventDefault();
 
   $.ajax({
@@ -69,8 +70,7 @@ $("#form_login").on('submit', function (e) {
 
       // res.token
       localStorage.setItem('token', res.token);
-
-      location.href = '/index.html';
+      location.href = '/backend.html';
     },
   });
 })
