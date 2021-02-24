@@ -28,6 +28,6 @@ $.ajaxPrefilter(function (options) {
 
   // 面向切片编程
   // Array.prototype.push = function () {
-
+  
   // }
 })
